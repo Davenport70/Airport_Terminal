@@ -14,7 +14,7 @@ while True:
     print("3) For create a flight trip.                                       |")
     print("4) For help.                                                       |")
     print("If you wish to leave the airport input a non-listed number.        |")
-    user_input = input("Enter a number:                                                    | \n ->")
+    user_input = str(input("Enter a number:                                                    | \n ->").strip())
     # create if statement for input 1
     if user_input == '1':
         name = input("Enter your name: \n -> ")
@@ -31,11 +31,14 @@ while True:
         list_of_passengers = input("Please enter name of whom will be on this flight: \n -> ")
 
     # # create if statement for input 4
-    # elif user_input == '4':
+    elif user_input == '4':
+        print("----------Still Under Maintenance--------")
+        exit = input('type back to exit: \n ->')
     # #write code to help guide user
     # elif user_input == 'Help':
     # #write code to allow user to quit
-    # else:
-    # print("Goodbye, thanks for visiting the terminal!")
+    elif user_input > '4':
+        print("Goodbye, thanks for visiting the terminal!")
+        break
 
 
