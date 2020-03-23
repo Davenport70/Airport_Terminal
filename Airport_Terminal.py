@@ -28,7 +28,7 @@ while True:
     elif user_input == '3':
         origin = input("Enter your name: \n -> ")
         destination = input("Enter your passport number: \n -> ")
-        list_of_passengers = input("Please enter name of whom will be on this flight: \n -> ")
+        passenger_input = input("Please enter name of whom will be on this flight: \n -> ")
 
     # # create if statement for input 4
     elif user_input == '4':
